@@ -1,0 +1,3 @@
+The interfaces are shown in pink to distinguish them from the implementing classes.
+This visual representation helps in understanding the relationships and hierarchies within the
+Java Collection Framework, making it easier to choose the right collection type for specific use cases.
