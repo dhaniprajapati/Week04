@@ -1,0 +1,20 @@
+package com.regularexpressions.replaceandmodify;
+
+import java.util.*;
+
+public class CensorBadWords {
+    //method to replace bad words with ****
+    public static String censorBadWords(String sentence, List<String> badWords) {
+        //loop through  string to check each word
+        for (String badWord : badWords) {
+            sentence = sentence.replaceAll(badWord, "****");
+        }
+        return sentence;
+    }
+    public static void main(String[] args) {
+        String sentence = "This is a damn bad example with some stupid words.";
+        //list of bad words
+        List<String> badWords = List.of("damn", "stupid");
+        System.out.println(censorBadWords(sentence, badWords));
+    }
+}
