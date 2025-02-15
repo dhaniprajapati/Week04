@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class TaskTest {
 
     @Test
-    @Timeout(value = 2, unit = TimeUnit.SECONDS)
+    @Timeout(value = 1, unit = TimeUnit.SECONDS)
     public void testLongRunningTask() throws InterruptedException {
         Task task = new Task();
         task.longRunningTask();
